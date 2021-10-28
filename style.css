@@ -33,7 +33,7 @@ p {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 8px;
 }
 
 /* Track */
@@ -44,6 +44,7 @@ p {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--orange);
+  border-radius: 5px;
 }
 
 /* Handle on hover */
@@ -75,6 +76,7 @@ p {
 }
 .medium-text {
   font-size: 1.3rem;
+  line-height: 1.8;
 }
 /* end */
 
