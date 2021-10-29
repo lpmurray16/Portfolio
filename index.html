@@ -1,46 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Logan Murray - Front End Developer</title>
-    <link rel="shortcut icon" type="image/png" href="assets/boy.png"/>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="shortcut icon" type="image/png" href="assets/boy.png" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <!-- HEADER -->
     <div class="header">
-        <div class="icon_title">
-            <img src="assets/gamer_desk.png" alt="Icon" class="icon">
-            <h1 class="top_title">Logan Murray's Online Portfolio</h1>
-        </div>
-        <nav class="outter_nav">
-            <ul class="nav_list">
-                <li class="list_item"><a href="">About Me</a></li>
-                <li class="list_item"><a href="">Projects</a></li>
-                <li class="list_item"><a href="">Future Goals</a></li>
+      <div class="icon_title">
+        <img src="assets/gamer_desk.png" alt="Icon" class="icon" />
+        <h1 class="top_title">Logan Murray's Online Portfolio</h1>
+      </div>
+      <nav class="outter_nav">
+        <ul class="nav_list">
+          <li class="list_item"><a href="">About Me</a></li>
+          <li class="list_item"><a href="">Projects</a></li>
+          <li class="list_item"><a href="">Future Goals</a></li>
+        </ul>
+      </nav>
+      <!-- Hamburger Menu Start -->
+      <div class="menu__container">
+        <i class="open__nav hamburger__icon"></i>
+        <p class="menu__text">MENU</p>
+      </div>
+      <div class="cover out_of_frame">
+        <!-- Backdrop -->
+        <div class="cover__overlay"></div>
+
+        <!-- Sidebar -->
+        <div class="cover__sidebar">
+          <!-- the close button -->
+          <button class="close__nav">
+            <div class="button__line button__line--first"></div>
+            <div class="button__line button__line--second"></div>
+          </button>
+          <!-- The nav inside -->
+          <nav class="sidebar_nav">
+            <ul class="sidebar_nav_list">
+              <li class="list_item"><a href="">About Me</a></li>
+              <li class="list_item"><a href="">Projects</a></li>
+              <li class="list_item"><a href="">Future Goals</a></li>
             </ul>
-        </nav>
+          </nav>
+        </div>
+      </div>
     </div>
-    
+
     <!-- START HERO SECTION -->
     <section class="fullwidth hero">
-        <div class="col half-full me_text">
-            <h1 id="title_name">Logan Murray</h1>
-            <h2 id="sub_title">Front-end Developer</h2>
-            <p class="top-bottom medium-text">Graduated from DePaul University in March 2020 during the pandemic with a BS in Computer Science with a focus on Software Developement.
-                My commencement is a 3 hour YouTube video that I watched in my pajamas at home. 
-                Shortly after graduation my interests shifted to the world of web developement and I have been focused on learning more and more ever since.
-                My main goal is to eventually become a reliable and capable fullstack web developer.
-            </p>
-            <a href="#about-me.html"><button class="cta">Learn More About Me</button></a>
+      <div class="col half-full me_text">
+        <div>
+          <h1 id="title_name">Logan Murray</h1>
+          <h2 id="sub_title">Front-end Developer</h2>
         </div>
-        <div class="col half-full me_pic">
-            <img src="assets/prof_blacksuit_bg_square-removebg-preview.png" alt="Picture of Me, Logan" class="prof_pic peach-border">
-        </div>
-        
+
+        <p class="top-bottom medium-text">
+          DePaul University - March 2020<br />
+          BS in Computer Science - Software Developement<br />
+          My commencement is a 3 hour YouTube video that I watched in my pajamas
+          at home. Shortly after graduation my interests shifted to the world of
+          web developement and I have been picking up and learning new skills
+          everyday. My main goal is to eventually become a reliable and capable
+          fullstack web developer.
+        </p>
+        <a href="#about-me.html"
+          ><button class="cta">Learn More About Me</button></a
+        >
+      </div>
+      <div class="col half-full me_pic">
+        <img
+          src="assets/prof_blacksuit_bg_square-removebg-preview.png"
+          data-tilt
+          alt="Picture of Me, Logan"
+          class="prof_pic peach-border"
+        />
+      </div>
     </section>
-    
-</body>
+
+    <!-- Scripts -->
+    <script src="scripts/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+  </body>
 </html>
