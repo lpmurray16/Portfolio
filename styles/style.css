@@ -74,9 +74,6 @@ p {
 /* end */
 
 /* miscelleneous */
-.peach-border {
-  border: 20px solid var(--peachy);
-}
 .top-bottom {
   padding: 1em 0;
 }
@@ -86,6 +83,9 @@ p {
 }
 .out_of_frame {
   transform: translateX(100%);
+}
+.off-white {
+  background: var(--headline);
 }
 /* end */
 
@@ -180,14 +180,17 @@ p {
   flex-wrap: wrap;
 }
 .fullwidth {
-  margin: 0 16%;
+  margin: 0 16% 5%;
 }
 .prof_pic {
   background-color: var(--orange);
   border-radius: 50%;
-  box-shadow: 1px 1px 1px var(--peachy);
   min-width: 220px;
 }
+.fancy-border {
+  box-shadow: 0 0 0 10px var(--peachy), 0 0 0 20px var(--extra);
+}
+
 #title_name {
   font-size: 3.5rem;
 }
@@ -212,6 +215,12 @@ p {
 .half-full {
   width: 50%;
   padding: 1em;
+}
+.flex-row {
+  display: flex;
+}
+.flex-center {
+  justify-content: center;
 }
 /* end */
 
@@ -307,6 +316,37 @@ nav.sidebar_nav {
 }
 /* END OF close button css */
 
+/* Card */
+.outter_cards {
+  margin: 0;
+}
+.card {
+  background: var(--background);
+  border-radius: 3px;
+  width: 25ch;
+  padding: 1em;
+  margin: 1em;
+}
+.card h2 {
+  margin-bottom: 1em;
+}
+.wrap_cards {
+  padding: 2em;
+}
+.wrap_cards p {
+  line-height: 1.8;
+}
+.wrap_cards > h1, .wrap_cards > h3 {
+  color:var(--background);
+  text-align: center;
+  width: 40ch;
+  margin: 0 auto;
+  line-height: 1.8;
+}
+.wrap_cards > h3 {
+  margin-bottom: 1em;
+}
+/* end of card */
 @media (max-width: 1000px) {
   .fullwidth {
     margin: 0 9%;
@@ -326,7 +366,7 @@ nav.sidebar_nav {
     width: 100%;
   }
   .fullwidth {
-    margin: 0 9%;
+    margin: 0 9% 4%;
   }
   .me_text {
     order: 2;
