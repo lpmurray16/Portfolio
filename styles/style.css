@@ -364,6 +364,10 @@ nav.sidebar_nav {
   .fullwidth {
     margin: 0 9%;
   }
+  .outter_cards {
+    max-width: 100%;
+    margin: 2em 0;
+  }
   .outter_nav {
     display: none;
   }
