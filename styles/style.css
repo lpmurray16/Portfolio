@@ -382,7 +382,11 @@ nav.sidebar_nav {
   .half-full {
     width: 100%;
   }
-  .fullwidth {
+  .outter_cards {
+    max-width: 100%;
+    margin: 2em 0;
+  }
+  .hero {
     margin: 0 9% 4%;
   }
   .me_text {
