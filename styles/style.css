@@ -190,7 +190,7 @@ p {
 }
 .fullwidth {
   margin: 0 16% 5%;
-  overflow: hidden;
+  overflow: auto;
 }
 .prof_pic {
   background-color: var(--orange);
