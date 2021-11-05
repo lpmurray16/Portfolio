@@ -29,21 +29,25 @@ var slideUp = {
   opacity: null,
   delay: 300,
   duration: 500,
-  reset: true
+  easing: 'ease'
 };
 var slideRight = {
   distance: '100%',
   origin: 'right',
   opacity: null,
   delay: 300,
-  duration: 500
+  duration: 500,
+  reset: true,
+  easing: 'ease'
 };
 var slideLeft = {
   distance: '100%',
   origin: 'left',
   opacity: null,
   delay: 300,
-  duration: 500
+  duration: 500,
+  reset: true,
+  easing: 'ease'
 };
 
 ScrollReveal().reveal('.card', slideUp);

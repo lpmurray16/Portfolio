@@ -377,7 +377,11 @@ nav.sidebar_nav {
 /* footer css */
 .footer {
   padding: 2em;
+  height: 23vh;
 }
+/* end of footer */
+
+
 @media (max-width: 1000px) {
   .fullwidth {
     padding: 0 9%;
