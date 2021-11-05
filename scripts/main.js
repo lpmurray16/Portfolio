@@ -24,28 +24,28 @@ outsideNav.addEventListener("click", (e) => {
 });
 
 var slideUp = {
-  distance: '150%',
+  distance: '200%',
   origin: 'bottom',
   opacity: null,
   delay: 300,
-  duration: 500,
+  duration: 600,
   easing: 'ease'
 };
 var slideRight = {
-  distance: '100%',
+  distance: '150%',
   origin: 'right',
   opacity: null,
   delay: 300,
-  duration: 500,
+  duration: 600,
   reset: true,
   easing: 'ease'
 };
 var slideLeft = {
-  distance: '100%',
+  distance: '150%',
   origin: 'left',
   opacity: null,
   delay: 300,
-  duration: 500,
+  duration: 600,
   reset: true,
   easing: 'ease'
 };
