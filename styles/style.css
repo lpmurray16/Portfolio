@@ -380,7 +380,7 @@ nav.sidebar_nav {
 }
 @media (max-width: 1000px) {
   .fullwidth {
-    margin: 0 9%;
+    padding: 0 9%;
   }
   .outter_cards {
     max-width: 100%;
