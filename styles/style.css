@@ -189,8 +189,8 @@ p {
   flex-wrap: wrap;
 }
 .fullwidth {
-  margin: 0 16% 5%;
-  overflow: auto;
+  padding: 0 16% 5%;
+  overflow: hidden;
 }
 .prof_pic {
   background-color: var(--orange);
