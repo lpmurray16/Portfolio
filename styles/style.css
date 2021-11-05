@@ -220,7 +220,6 @@ p {
 .flex-col {
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
 }
 .half-full {
   width: 50%;
