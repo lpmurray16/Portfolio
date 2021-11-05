@@ -25,7 +25,15 @@ h3,
 li {
   color: var(--headline);
 }
-
+a {
+  color:var(--headline);
+  text-decoration: underline var(--orange);
+  transition: all 300ms ease;
+}
+a:hover {
+  color: var(--peachy);
+  text-decoration: underline var(--extra);
+}
 p {
   color: var(--paragraph);
 }
@@ -182,6 +190,7 @@ p {
 }
 .fullwidth {
   margin: 0 16% 5%;
+  overflow: hidden;
 }
 .prof_pic {
   background-color: var(--orange);
@@ -208,7 +217,7 @@ p {
 /* end */
 
 /* Flex columns and rows */
-.col {
+.flex-col {
   display: flex;
   flex-flow: column;
   justify-content: space-between;
@@ -217,11 +226,15 @@ p {
   width: 50%;
   padding: 1em;
 }
+.flex-between {
+  justify-content: space-between;
+}
 .flex-row {
   display: flex;
 }
 .flex-center {
   justify-content: center;
+  align-items: center;
 }
 /* end */
 
@@ -360,6 +373,11 @@ nav.sidebar_nav {
   font-size: 0.99rem;
 }
 /* end of card */
+
+/* footer css */
+.footer {
+  padding: 2em;
+}
 @media (max-width: 1000px) {
   .fullwidth {
     margin: 0 9%;

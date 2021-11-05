@@ -7,6 +7,7 @@
     <title>Logan Murray - Front End Developer</title>
     <link rel="shortcut icon" type="image/png" href="assets/boy.png" />
     <link rel="stylesheet" href="styles/style.css" />
+    <script src="https://unpkg.com/scrollreveal@4"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -59,7 +60,7 @@
 
     <!-- START HERO SECTION -->
     <section class="fullwidth hero">
-      <div class="col half-full me_text">
+      <div class="flex-col half-full me_text">
         <div>
           <h1 id="title_name">Logan Murray</h1>
           <h2 id="sub_title">Front-end Developer</h2>
@@ -78,7 +79,7 @@
           ><button class="cta">Learn More About Me</button></a
         >
       </div>
-      <div class="col half-full me_pic">
+      <div class="flex-col half-full me_pic">
         <img
           src="assets/prof_blacksuit_bg_square-removebg-preview.png"
           data-tilt
@@ -88,6 +89,8 @@
       </div>
     </section>
     <!-- END OF HERO SECTION -->
+
+    <!-- START OF CARDS/SKILL SECTION -->
     <section class="fullwidth off-white outter_cards">
       <div class="wrap_cards">
         <h1>Skills & Languages</h1>
@@ -96,6 +99,7 @@
           something new everyday. Here is a quick breakdown of the things I
           know.
         </h3>
+        <!-- ROW -->
         <div class="flex-row flex-center">
           <div class="card">
             <div class="card_top">
@@ -120,10 +124,11 @@
             </p>
           </div>
         </div>
+        <!-- ROW -->
         <div class="flex-row flex-center">
           <div class="card">
             <div class="card_top">
-              <img src="assets/java.png" alt="Java">
+              <img src="assets/java.png" alt="Java" />
               <h2>Java</h2>
             </div>
             <p>
@@ -134,7 +139,7 @@
           </div>
           <div class="card">
             <div class="card_top">
-              <img src="assets/python.png" alt="Python">
+              <img src="assets/python.png" alt="Python" />
               <h2>Python</h2>
             </div>
             <p>
@@ -144,10 +149,11 @@
             </p>
           </div>
         </div>
+        <!-- ROW -->
         <div class="flex-row flex-center">
           <div class="card">
             <div class="card_top">
-              <img src="assets/mysql.png" alt="SQL">
+              <img src="assets/mysql.png" alt="SQL" />
               <h2>SQL</h2>
             </div>
             <p>
@@ -158,7 +164,7 @@
           </div>
           <div class="card">
             <div class="card_top">
-              <img src="assets/wordpress.png" alt="WordPress">
+              <img src="assets/wordpress.png" alt="WordPress" />
               <h2>WordPress</h2>
             </div>
             <p>
@@ -168,6 +174,20 @@
             </p>
           </div>
         </div>
+      </div>
+    </section>
+    <!-- END OF CARDS SECTION -->
+
+    <!-- FOOTER/END SECTION CONTACT INFO AND FORM -->
+    <section class="fullwidth footer">
+      <div class="flex-col flex-center top-bottom">
+        <h1>Contant Info</h1>
+        <h3>Please reach out to me with any questions.</h3>
+      </div>
+      <div class="medium-text flex-row flex-between">
+        <p>Email: <a href="mailto:logan@lmurray.info">logan@lmurray.info</a></p>
+        <p>Github: <a href="https://github.com/lpmurray16">lpmurray16</a></p>
+        <p>CodePen: <a href="https://codepen.io/lpmurray16">lpmurray16</a></p>
       </div>
     </section>
 

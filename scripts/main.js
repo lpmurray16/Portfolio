@@ -22,3 +22,30 @@ closeMenu.addEventListener("click", (e) => {
 outsideNav.addEventListener("click", (e) => {
   toggleNav(menu);
 });
+
+var slideUp = {
+  distance: '150%',
+  origin: 'bottom',
+  opacity: null,
+  delay: 300,
+  duration: 500,
+  reset: true
+};
+var slideRight = {
+  distance: '100%',
+  origin: 'right',
+  opacity: null,
+  delay: 300,
+  duration: 500
+};
+var slideLeft = {
+  distance: '100%',
+  origin: 'left',
+  opacity: null,
+  delay: 300,
+  duration: 500
+};
+
+ScrollReveal().reveal('.card', slideUp);
+ScrollReveal().reveal('.me_pic', slideRight);
+ScrollReveal().reveal('.me_text', slideLeft);
