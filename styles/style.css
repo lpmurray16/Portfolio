@@ -420,9 +420,11 @@ input, textarea {
   margin-bottom: 1em;
   background: var(--background);
   padding: 16px;
+  color: var(--peachy);
 }
 textarea {
   margin-bottom: 4em;
+  color: var(--peachy);
 }
 ::placeholder {
   color: var(--paragraph);
