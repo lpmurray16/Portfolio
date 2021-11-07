@@ -93,8 +93,8 @@
     <!-- START OF CARDS/SKILL SECTION -->
     <section class="fullwidth off-white outter_cards">
       <div class="wrap_cards">
-        <h1>Skills & Languages</h1>
-        <h3>
+        <h1 class="section_header">Skills & Languages</h1>
+        <h3 class="section_subheader">
           I am constantly working on my developement skills. I like to learn
           something new everyday. Here is a quick breakdown of the things I
           know.
@@ -175,15 +175,36 @@
     <!-- FOOTER/END SECTION CONTACT INFO AND FORM -->
     <section class="fullwidth footer">
       <div class="flex-col flex-center top-bottom">
-        <h1>Contant Info</h1>
-        <h3>Please reach out to me with any questions.</h3>
+        <h1 class="section_header">Contant Info</h1>
+        <h3 class="section_subheader">Please reach out to me with any questions.</h3>
       </div>
-      <div class="medium-text flex-row flex-between">
+      <div class="medium-text flex-row flex-evenly">
         <p>Email: <a href="mailto:logan@lmurray.info">logan@lmurray.info</a></p>
         <p>Github: <a href="https://github.com/lpmurray16">lpmurray16</a></p>
         <p>CodePen: <a href="https://codepen.io/lpmurray16">lpmurray16</a></p>
       </div>
+      <div class="wrap_form">
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: </label><input type="text" name="name" placeholder="John Doe"/>   
+        </p>
+        <p>
+          <label>Your Email: </label><input type="email" name="email" placeholder="youremail@email.com"/>
+        </p>
+        <p>
+          <label>Subject: </label><input type="text" name="subject" placeholder="Question/Opportunity/Comment/etc."/>
+        </p>
+        <p>
+          <label>Message: </label><textarea name="message" placeholder="Description of why you are reaching out..."></textarea>
+        </p>
+        <p>
+          <button class="bttn" type="submit">Submit</button>
+        </p>
+      </form>
+    </div>
     </section>
+    
+    <!-- END FOOTER -->
 
     <!-- Scripts -->
     <script src="scripts/main.js"></script>

@@ -228,6 +228,9 @@ p {
 .flex-between {
   justify-content: space-between;
 }
+.flex-evenly {
+  justify-content: space-evenly;
+}
 .flex-row {
   display: flex;
 }
@@ -272,6 +275,23 @@ nav.sidebar_nav {
   text-align: center;
   background-color: var(--peachy);
   border-top: 2px solid var(--orange);
+}
+/* end */
+
+/* first button type css */
+.bttn {
+  color: var(--button-text);
+  background-color: var(--orange);
+  padding: 1.2rem 2rem;
+  border-radius: 3px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: all 400ms ease;
+}
+.bttn:hover, .bttn:focus {
+  box-shadow: inset 0 -3.75em 0 0 var(--peachy);
 }
 /* end */
 
@@ -358,15 +378,15 @@ nav.sidebar_nav {
 .wrap_cards p {
   line-height: 1.8;
 }
-.wrap_cards > h1,
-.wrap_cards > h3 {
+.section_header,
+.section_subheader {
   color: var(--background);
   text-align: center;
   max-width: 40ch;
   margin: 0 auto;
   line-height: 1.8;
 }
-.wrap_cards > h3 {
+.section_subheader {
   margin-bottom: 1em;
   color: #2e2f3e;
   font-size: 0.99rem;
@@ -376,12 +396,54 @@ nav.sidebar_nav {
 /* footer css */
 .footer {
   padding: 2em;
-  height: 23vh;
+}
+.footer .section_header,
+.footer .section_subheader {
+  color: var(--headline);
+}
+.wrap_form {
+  padding: 2em;
+}
+form p {
+  display: flex;
+  flex-flow: column;
+  margin: 0 auto;
+  max-width: 500px;
 }
 /* end of footer */
 
 
+/* input containers */
+input, textarea {
+  height: 4em;
+  border: 2px solid var(--orange);
+  margin-bottom: 1em;
+  background: var(--background);
+  padding: 16px;
+}
+textarea {
+  margin-bottom: 4em;
+}
+::placeholder {
+  color: var(--paragraph);
+}
+label {
+  color: var(--headline);
+  padding: 1em 0;
+}
+/* end of input */
+
 @media (max-width: 1000px) {
+  .half-full {
+    width: 100%;
+  }
+  .me_text {
+    order: 2;
+  }
+  .me_pic {
+    order: 1;
+    margin: 1em 2em;
+  }
   .fullwidth {
     padding: 0 9%;
   }
@@ -400,9 +462,6 @@ nav.sidebar_nav {
   }
 }
 @media (max-width: 768px) {
-  .half-full {
-    width: 100%;
-  }
   .outter_cards {
     max-width: 100%;
     margin: 2em 0;
@@ -410,13 +469,7 @@ nav.sidebar_nav {
   .hero {
     margin: 0 9% 4%;
   }
-  .me_text {
-    order: 2;
-  }
-  .me_pic {
-    order: 1;
-    margin: 1em 2em;
-  }
+  
   .flex-row {
     flex-wrap: wrap;
   }
