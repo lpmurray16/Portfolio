@@ -421,11 +421,14 @@ input, textarea {
   margin-bottom: 1em;
   background: var(--background);
   padding: 16px;
-  color: var(--peachy);
+  color: var(--headline);
+}
+input::active, textarea::active {
+  border: 2px solid var(--peachy);
 }
 textarea {
   margin-bottom: 4em;
-  color: var(--peachy);
+  color: var(--headline);
 }
 ::placeholder {
   color: var(--paragraph);
