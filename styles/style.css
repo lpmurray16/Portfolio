@@ -189,13 +189,14 @@ p {
   flex-wrap: wrap;
 }
 .fullwidth {
-  padding: 0 16% 5%;
+  padding: 0 5% 5%;
   overflow: hidden;
 }
 .prof_pic {
   background-color: var(--orange);
   border-radius: 50%;
   min-width: 220px;
+  max-width: 94%;
 }
 .fancy-border {
   box-shadow: 0 0 0 10px var(--peachy), 0 0 0 20px var(--extra);
@@ -447,7 +448,7 @@ label {
     margin: 1em 2em;
   }
   .fullwidth {
-    padding: 0 9%;
+    padding: 0;
   }
   .outter_cards {
     max-width: 100%;
