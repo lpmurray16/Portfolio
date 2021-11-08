@@ -20,14 +20,14 @@
     <!-- HEADER -->
     <div class="header">
       <div class="icon_title">
-        <img src="assets/gamer_desk.png" alt="Icon" class="icon" />
+        <a id="home_icon" href="/index.html"><img src="assets/gamer_desk.png" alt="Icon" class="icon" /></a>
         <h1 class="top_title">Logan Murray's Online Portfolio</h1>
       </div>
       <nav class="outter_nav">
         <ul class="nav_list">
-          <li class="list_item"><a href="">About Me</a></li>
-          <li class="list_item"><a href="">Projects</a></li>
-          <li class="list_item"><a href="">Future Goals</a></li>
+          <li class="list_item"><a href="/about-me.html">About Me</a></li>
+          <li class="list_item"><a href="/projects.html">Projects</a></li>
+          <li class="list_item"><a href="/future-goals.html">Future Goals</a></li>
         </ul>
       </nav>
       <!-- Hamburger Menu Start -->
@@ -49,162 +49,168 @@
           <!-- The nav inside -->
           <nav class="sidebar_nav">
             <ul class="sidebar_nav_list">
-              <li class="list_item"><a href="">About Me</a></li>
-              <li class="list_item"><a href="">Projects</a></li>
-              <li class="list_item"><a href="">Future Goals</a></li>
+              <a href="/about-me.html"><li class="list_item">About Me</li></a>
+              <a href="/projects.html"><li class="list_item">Projects</li></a>
+             <a href="/future-goals.html"> <li class="list_item">Future Goals</li></a>
             </ul>
           </nav>
         </div>
       </div>
     </div>
 
-    <!-- START HERO SECTION -->
-    <section class="fullwidth hero">
-      <div class="flex-col half-full me_text">
-        <div>
-          <h1 id="title_name">Logan Murray</h1>
-          <h2 id="sub_title">Front-end Developer</h2>
-        </div>
+    <div class="main_content">
+      <!-- START HERO SECTION -->
+      <section class="fullwidth hero">
+        <div class="flex-col col-50 me_text flex-center">
+          <div class="fill-width">
+            <h1 id="title_name">Logan Murray</h1>
+            <h2 id="sub_title">Front-end Developer</h2>
+          </div>
 
-        <p class="top-bottom medium-text">
-          DePaul University - March 2020<br />
-          BS in Computer Science - Software Developement<br />
-          My commencement is a 3 hour YouTube video that I watched in my pajamas
-          at home. Shortly after graduation my interests shifted to the world of
-          web developement and I have been picking up and learning new skills
-          everyday. My main goal is to eventually become a reliable and capable
-          fullstack web developer.
-        </p>
-        <a href="#about-me.html"
-          ><button class="cta">Learn More About Me</button></a
-        >
-      </div>
-      <div class="flex-col half-full me_pic flex-center">
-        <img
-          src="assets/prof_blacksuit_bg_square-removebg-preview.png"
-          data-tilt
-          alt="Picture of Me, Logan"
-          class="prof_pic fancy-border"
-        />
-      </div>
-    </section>
-    <!-- END OF HERO SECTION -->
+          <p class="top-bottom medium-text">
+            DePaul University - March 2020<br />
+            BS in Computer Science - Software Developement<br />
+            My commencement is a 3 hour YouTube video that I watched in my pajamas
+            at home. Shortly after graduation my interests shifted to the world of
+            web developement and I have been picking up and learning new skills
+            everyday. My main goal is to eventually become a reliable and capable
+            fullstack web developer.
+          </p>
+          <div class="fill-width">
+            <a href="/about-me.html">
+              <button class="cta">Learn More About Me</button>
+            </a>
+          </div>
+          
+        </div>
+        <div class="flex-col col-50 me_pic flex-center">
+          <img
+            src="assets/prof_blacksuit_bg_square-removebg-preview.png"
+            data-tilt
+            alt="Picture of Me, Logan"
+            class="prof_pic fancy-border"
+          />
+        </div>
+      </section>
+      <!-- END OF HERO SECTION -->
 
-    <!-- START OF CARDS/SKILL SECTION -->
-    <section class="fullwidth off-white outter_cards">
-      <div class="wrap_cards">
-        <h1 class="section_header">Skills & Languages</h1>
-        <h3 class="section_subheader">
-          I am constantly working on my developement skills. I like to learn
-          something new everyday. Here is a quick breakdown of the things I
-          know.
-        </h3>
-        <!-- ROW -->
-        <div class="flex-row flex-center">
-          <div class="card">
-            <div class="card_top">
-              <img src="assets/html-css-js.png" alt="HTML/CSS/JS" />
-              <h2>HTML/CSS/JS</h2>
+      <!-- START OF CARDS/SKILL SECTION -->
+      <section class="fullwidth off-white outter_cards">
+        <div class="wrap_cards">
+          <h1 class="section_header">Skills & Languages</h1>
+          <h3 class="section_subheader">
+            I am constantly working on my developement skills. I like to learn
+            something new everyday. Here is a quick breakdown of the things I
+            know.
+          </h3>
+          <!-- ROW -->
+          <div class="flex-row flex-center">
+            <div class="card">
+              <div class="card_top">
+                <img src="assets/html-css-js.png" alt="HTML/CSS/JS" />
+                <h2>HTML/CSS/JS</h2>
+              </div>
+              <p>
+                In my current role as a FED at Officite I have learned a significant amount of
+                HTML/CSS/JS on top of my basic knowledge I had acquired at school and in personal projects.
+              </p>
             </div>
-            <p>
-              In my current role as a FED at Officite I have learned a significant amount of
-              HTML/CSS/JS on top of my basic knowledge I had acquired at school and in personal projects.
-            </p>
+            <div class="card">
+              <div class="card_top">
+                <img src="assets/reactjs.png" alt="React" />
+                <h2>React</h2>
+              </div>
+              <p>
+                React and React.js have been increasingly popular and I was told if you want to make it
+                in the FED or web developement world you have to learn a framework (even though React is a library).
+              </p>
+            </div>
           </div>
-          <div class="card">
-            <div class="card_top">
-              <img src="assets/reactjs.png" alt="React" />
-              <h2>React</h2>
+          <!-- ROW -->
+          <div class="flex-row flex-center">
+            <div class="card">
+              <div class="card_top">
+                <img src="assets/java.png" alt="Java" />
+                <h2>Java</h2>
+              </div>
+              <p>
+                Most of my classes at DePaul were taught in Java. Data Structures and OOP were primarily taught in Java while my
+                systems classes were all C/C++. I do not enjoy C/C++ as much as I enjoy Java.
+              </p>
             </div>
-            <p>
-              React and React.js have been increasingly popular and I was told if you want to make it
-              in the FED or web developement world you have to learn a framework (even though React is a library).
-            </p>
+            <div class="card">
+              <div class="card_top">
+                <img src="assets/python.png" alt="Python" />
+                <h2>Python</h2>
+              </div>
+              <p>
+                Python is one of those hate to love programming languages for me. It is so simple and easy with its use of syntax that 
+                sometimes I forget I am programming at all. But it is very useful and has a Swiss Army Knife of usability.
+              </p>
+            </div>
+          </div>
+          <!-- ROW -->
+          <div class="flex-row flex-center">
+            <div class="card">
+              <div class="card_top">
+                <img src="assets/mysql.png" alt="SQL" />
+                <h2>SQL</h2>
+              </div>
+              <p>
+                Database management was a fun and challenging course for me at DePaul. And although we used Oracle PL/SQL 
+                throughout the course I have found it is good practice to get fimiliar with opensource tools like MySQL.
+              </p>
+            </div>
+            <div class="card">
+              <div class="card_top">
+                <img src="assets/wordpress.png" alt="WordPress" />
+                <h2>WordPress</h2>
+              </div>
+              <p>
+                WordPress is very fun to experiemnt with and in my CMS class we learned a lot of just how capable 
+                WordPress is as a web building tool. We even learned some PHP and made our own plugin.
+              </p>
+            </div>
           </div>
         </div>
-        <!-- ROW -->
-        <div class="flex-row flex-center">
-          <div class="card">
-            <div class="card_top">
-              <img src="assets/java.png" alt="Java" />
-              <h2>Java</h2>
-            </div>
-            <p>
-              Most of my classes at DePaul were taught in Java. Data Structures and OOP were primarily taught in Java while my
-              systems classes were all C/C++. I do not enjoy C/C++ as much as I enjoy Java.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card_top">
-              <img src="assets/python.png" alt="Python" />
-              <h2>Python</h2>
-            </div>
-            <p>
-              Python is one of those hate to love programming languages for me. It is so simple and easy with its use of syntax that 
-              sometimes I forget I am programming at all. But it is very useful and has a Swiss Army Knife of usability.
-            </p>
-          </div>
-        </div>
-        <!-- ROW -->
-        <div class="flex-row flex-center">
-          <div class="card">
-            <div class="card_top">
-              <img src="assets/mysql.png" alt="SQL" />
-              <h2>SQL</h2>
-            </div>
-            <p>
-              Database management was a fun and challenging course for me at DePaul. And although we used Oracle PL/SQL 
-              throughout the course I have found it is good practice to get fimiliar with opensource tools like MySQL.
-            </p>
-          </div>
-          <div class="card">
-            <div class="card_top">
-              <img src="assets/wordpress.png" alt="WordPress" />
-              <h2>WordPress</h2>
-            </div>
-            <p>
-              WordPress is very fun to experiemnt with and in my CMS class we learned a lot of just how capable 
-              WordPress is as a web building tool. We even learned some PHP and made our own plugin.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- END OF CARDS SECTION -->
+      </section>
+      <!-- END OF CARDS SECTION -->
 
-    <!-- FOOTER/END SECTION CONTACT INFO AND FORM -->
-    <section class="fullwidth footer">
-      <div class="flex-col flex-center top-bottom">
-        <h1 class="section_header">Contant Info</h1>
-        <h3 class="section_subheader">Please reach out to me with any questions.</h3>
+      <!-- FOOTER/END SECTION CONTACT INFO AND FORM -->
+      <section class="fullwidth footer">
+        <div class="flex-col flex-center top-bottom">
+          <h1 class="section_header">Contant Info</h1>
+          <h3 class="section_subheader">Please reach out to me with any questions.</h3>
+        </div>
+        <div class="medium-text flex-row flex-evenly">
+          <p>Email: <a href="mailto:logan@lmurray.info">logan@lmurray.info</a></p>
+          <p>Github: <a href="https://github.com/lpmurray16">lpmurray16</a></p>
+          <p>CodePen: <a href="https://codepen.io/lpmurray16">lpmurray16</a></p>
+        </div>
+        <div class="wrap_form">
+        <form name="contact" method="POST" data-netlify="true">
+          <div>
+            <p>
+              <label>Your Name: </label><input type="text" name="name" placeholder="John Doe"/>   
+            </p>
+            <p>
+              <label>Your Email: </label><input type="email" name="email" placeholder="youremail@email.com"/>
+            </p>
+          </div>
+          <p>
+            <label>Subject: </label><input type="text" name="subject" placeholder="Question/Opportunity/Comment/etc."/>
+          </p>
+          <p>
+            <label>Message: </label><textarea name="message" placeholder="Description of why you are reaching out..."></textarea>
+          </p>
+          <p>
+            <button class="bttn" type="submit">Submit</button>
+          </p>
+        </form>
       </div>
-      <div class="medium-text flex-row flex-evenly">
-        <p>Email: <a href="mailto:logan@lmurray.info">logan@lmurray.info</a></p>
-        <p>Github: <a href="https://github.com/lpmurray16">lpmurray16</a></p>
-        <p>CodePen: <a href="https://codepen.io/lpmurray16">lpmurray16</a></p>
-      </div>
-      <div class="wrap_form">
-      <form name="contact" method="POST" data-netlify="true">
-        <p>
-          <label>Your Name: </label><input type="text" name="name" placeholder="John Doe"/>   
-        </p>
-        <p>
-          <label>Your Email: </label><input type="email" name="email" placeholder="youremail@email.com"/>
-        </p>
-        <p>
-          <label>Subject: </label><input type="text" name="subject" placeholder="Question/Opportunity/Comment/etc."/>
-        </p>
-        <p>
-          <label>Message: </label><textarea name="message" placeholder="Description of why you are reaching out..."></textarea>
-        </p>
-        <p>
-          <button class="bttn" type="submit">Submit</button>
-        </p>
-      </form>
+      </section>
+      <!-- END FOOTER -->
     </div>
-    </section>
-    
-    <!-- END FOOTER -->
 
     <!-- Scripts -->
     <script src="scripts/main.js"></script>

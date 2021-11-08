@@ -83,6 +83,9 @@ p {
 /* end */
 
 /* miscelleneous */
+.fill-width {
+  width: 100%;
+}
 .top-bottom {
   padding: 1em 0;
 }
@@ -97,6 +100,17 @@ p {
   background: var(--headline);
 }
 /* end */
+
+/* icon at the top of every page */
+#home_icon {
+  transition: all 300ms ease;
+}
+#home_icon:hover {
+  filter: drop-shadow(1px 1px 3px var(--peachy));
+}
+/* end */
+
+
 
 /* Header CSS */
 .header {
@@ -118,14 +132,14 @@ p {
   width: 100%;
   align-items: center;
 }
-.list_item a {
+.nav_list .list_item a {
   text-decoration: none;
   color: var(--headline);
 }
-.list_item {
+.nav_list .list_item {
   transition: all 300ms ease;
 }
-.list_item:hover {
+.nav_list .list_item:hover {
   transform: scale(1.2);
 }
 .icon_title {
@@ -178,15 +192,17 @@ p {
   width: 200px;
 
   /* Background */
-  background-color: var(--extra);
+  background-color: var(--background);
 }
 /* end */
+
 
 /* Hero Section */
 .hero {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  height: 100vh;
 }
 .fullwidth {
   padding: 0 5% 5%;
@@ -222,7 +238,7 @@ p {
   display: flex;
   flex-flow: column;
 }
-.half-full {
+.col-50 {
   width: 50%;
   padding: 1em;
 }
@@ -276,6 +292,18 @@ nav.sidebar_nav {
   text-align: center;
   background-color: var(--peachy);
   border-top: 2px solid var(--orange);
+}
+.sidebar_nav_list a {
+  text-decoration: none;
+}.sidebar_nav_list a:hover {
+  text-decoration: none;
+  color: var(--headline);
+}
+.sidebar_nav_list .list_item:hover {
+  padding: 0.5em 0;
+  text-align: center;
+  background-color: var(--orange);
+  border-top: 2px solid var(--peachy);
 }
 /* end */
 
@@ -440,7 +468,10 @@ label {
 /* end of input */
 
 @media (max-width: 1000px) {
-  .half-full {
+  .hero {
+    height: auto;
+  }
+  .col-50 {
     width: 100%;
   }
   .me_text {
@@ -451,7 +482,7 @@ label {
     margin: 1em 2em;
   }
   .fullwidth {
-    padding: 0;
+    padding: 1em;
   }
   .outter_cards {
     max-width: 100%;
@@ -467,15 +498,21 @@ label {
     align-items: center;
   }
 }
+
 @media (max-width: 768px) {
   .outter_cards {
     max-width: 100%;
     margin: 2em 0;
   }
+  .col-50 {
+    width: 100%;
+  }
   .hero {
     margin: 0 9% 4%;
   }
-  
+  .fullwidth {
+    padding: 0.5em;
+  }
   .flex-row {
     flex-wrap: wrap;
   }
