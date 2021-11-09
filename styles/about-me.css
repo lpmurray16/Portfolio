@@ -1,0 +1,26 @@
+/* CSS styles specific to the About Me page */
+:root {
+    --background: #0f0e17;
+    --orange: #ff8906;
+    --headline: #fffffe;
+    --button-text: #fffffe;
+    --paragraph: #a7a9be;
+    --peachy: #f25f4c;
+    --extra: #e53170;
+  }
+
+.loop_pic {
+    max-width: 94%;
+}
+.slider {
+    padding: 5% 0;
+}
+.splide__slide {
+    color: var(--paragraph);
+    display: flex;
+    justify-content: center;
+}
+
+.splide__slide img {
+    max-height: 450px;
+}

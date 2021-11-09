@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Logan Murray - Front End Developer</title>
-    <link rel="shortcut icon" type="image/png" href="assets/boy.png" />
+    <link rel="shortcut icon" type="image/png" href="../assets/boy.png" />
     <link rel="stylesheet" href="..\styles\style.css" />
     <link rel="stylesheet" href="..\styles\about-me.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.3/dist/css/splide.min.css">
     <script src="https://unpkg.com/scrollreveal@4"></script>
     <link
       rel="stylesheet"
@@ -17,12 +18,15 @@
       referrerpolicy="no-referrer"
     />
   </head>
+
+
+  <!-- BODY START -->
   <body>
     <!-- HEADER -->
     <div id="top"></div>
     <div class="header">
       <div class="icon_title">
-        <a id="home_icon" href="/index.html"><img src="assets/gamer_desk.png" alt="Icon" class="icon" /></a>
+        <a id="home_icon" href="/index.html"><img src="../assets/gamer_desk.png" alt="Icon" class="icon" /></a>
         <h1 class="top_title">Logan Murray's Online Portfolio</h1>
       </div>
       <nav class="outter_nav">
@@ -65,17 +69,15 @@
       <section class="fullwidth hero">
         <div class="flex-col col-50 me_text flex-center">
           <div class="fill-width">
-            <h2 id="sub_title">Education</h2>
+            <h1 id="title_name">About Me</h1>
           </div>
 
           <p class="top-bottom medium-text">
-            DePaul University - March 2020<br />
-            BS in Computer Science - Software Developement<br />
-            My experience at DePaul left something to be desired after graduation. I didn't feel like I 
-            made much of myself as a developer in my experience there. I started to do little projects on 
-            my own at home and found that the world of web development was much more exciting to me. To build something 
-            and have it on the internet just ready to go on any device at anytime (connected to the internet) was more 
-            satisfying to me then creating bundled downloads and executable files.
+            I grew up in a town called Cary, IL and my education was extremely standard.
+            I attended and graduated from Cary-Grove Highschool and went off to the University of 
+            Iowa to study to become a nurse. My goals were quickly thwarted when I did some 
+            volunteer work at the local hospital and realized I did not like the atmosphere of 
+            hospitals. 
           </p>
           <div class="fill-width">
             <a href="/about-me.html">
@@ -86,18 +88,26 @@
         </div>
         <div class="flex-col col-50 me_pic flex-center">
           <img
-            src="assets/prof_blacksuit_bg_square-removebg-preview.png"
+            src="../assets/depaul.jpg"
             data-tilt
-            alt="Picture of Me, Logan"
-            class="prof_pic fancy-border"
+            alt="Loop Campus"
+            class="loop_pic fancy-border"
           />
         </div>
       </section>
       <!-- END OF HERO SECTION -->
 
       <!-- START OF CARDS/SKILL SECTION -->
-      <section class="fullwidth off-white outter_cards">
-        
+      <section class="fullwidth off-white outter_cards slider">
+        <div class="splide" data-splide='{"type":"loop", "speed":700}'>
+            <div class="splide__track">
+                  <ul class="splide__list">
+                      <li class="splide__slide"><img src="https://i.ibb.co/gM1zh9w/bodie1.jpg" alt="Bodie"></li>
+                      <li class="splide__slide"><img src="https://i.ibb.co/kg1dbqD/quill1.jpg" alt="Quill"></li>
+                      <li class="splide__slide"><img src="https://i.ibb.co/zx5BG4m/IMG-6561.jpg" alt="My Wife and I"></li>
+                  </ul>
+            </div>
+          </div>
       </section>
       <!-- END OF CARDS SECTION -->
 
@@ -143,7 +153,17 @@
 
     <!-- Scripts -->
     <script src="scripts/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.6/dist/js/splide.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script>
+        document.addEventListener( 'DOMContentLoaded', function() {
+          var splide = new Splide( '.splide' );
+          splide.mount();
+        } );
+      </script>
   </body>
+  <!-- END SCRIPTS -->
+
+  <!-- BODY END -->
 </html>
