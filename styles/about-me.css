@@ -22,5 +22,6 @@
 }
 
 .splide__slide img {
-    max-height: 450px;
+    max-height: 600px;
+    max-width: 100%;
 }
