@@ -16,7 +16,10 @@
 }
 
 body {
-  background-color: var(--background);
+  /* background-color: var(--background); */
+  background: url(../assets/new_bg.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
 
 h1,
@@ -85,6 +88,9 @@ p {
 /* miscelleneous */
 .fill-width {
   width: 100%;
+}
+.extra_padding {
+  padding: 0.8em;
 }
 .top-bottom {
   padding: 1em 0;
