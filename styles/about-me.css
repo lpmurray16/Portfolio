@@ -11,6 +11,7 @@
 
 .loop_pic {
     max-width: 94%;
+    border-radius: 3px;
 }
 .slider {
     padding: 5% 0;
