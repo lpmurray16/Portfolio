@@ -13,16 +13,26 @@
     max-width: 94%;
     border-radius: 3px;
 }
-.slider {
-    padding: 5% 0;
+
+/* slideshow css */
+.glide {
+    padding: 1em;
 }
-.splide__slide {
-    color: var(--paragraph);
+.glide__slide {
     display: flex;
     justify-content: center;
 }
-
-.splide__slide img {
-    max-height: 600px;
+.glide__slide img {
+    max-height: 400px;
     max-width: 100%;
+}
+.glide__arrows {
+    display: flex;
+    justify-content: center;
+    gap: 0.6em;
+    margin-top: 1em;
+}
+.glide__arrows button {
+    border: none;
+    background: transparent;
 }

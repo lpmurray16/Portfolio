@@ -8,17 +8,16 @@
     <link rel="shortcut icon" type="image/png" href="../assets/boy.png" />
     <link rel="stylesheet" href="..\styles\style.css" />
     <link rel="stylesheet" href="..\styles\about-me.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.3/dist/css/splide.min.css">
-    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.2.0/css/glide.core.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
   </head>
-
 
   <!-- BODY START -->
   <body>
@@ -26,14 +25,18 @@
     <div id="top"></div>
     <div class="header">
       <div class="icon_title">
-        <a id="home_icon" href="/index.html"><img src="../assets/gamer_desk.png" alt="Icon" class="icon" /></a>
+        <a id="home_icon" href="/index.html"
+          ><img src="../assets/gamer_desk.png" alt="Icon" class="icon"
+        /></a>
         <h1 class="top_title">Logan Murray's Online Portfolio</h1>
       </div>
       <nav class="outter_nav">
         <ul class="nav_list">
           <li class="list_item"><a href="about-me.html">About Me</a></li>
           <li class="list_item"><a href="projects.html">Projects</a></li>
-          <li class="list_item"><a href="future-goals.html">Future Goals</a></li>
+          <li class="list_item">
+            <a href="future-goals.html">Future Goals</a>
+          </li>
         </ul>
       </nav>
       <!-- Hamburger Menu Start -->
@@ -57,7 +60,9 @@
             <ul class="sidebar_nav_list">
               <a href="about-me.html"><li class="list_item">About Me</li></a>
               <a href="projects.html"><li class="list_item">Projects</li></a>
-             <a href="future-goals.html"> <li class="list_item">Future Goals</li></a>
+              <a href="future-goals.html">
+                <li class="list_item">Future Goals</li></a
+              >
             </ul>
           </nav>
         </div>
@@ -67,26 +72,34 @@
     <div class="main_content">
       <!-- START HERO SECTION -->
       <section class="fullwidth hero">
-        <div class="flex-col col-50 me_text flex-center">
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          class="flex-col col-50 me_text flex-center"
+        >
           <div class="fill-width">
             <h1 id="title_name">About Me</h1>
           </div>
 
           <p class="top-bottom medium-text">
-            I grew up in a town called Cary, IL and my education was extremely standard.
-            I attended and graduated from Cary-Grove Highschool and went off to the University of 
-            Iowa to study to become a nurse. My goals were quickly thwarted when I did some 
-            volunteer work at the local hospital and realized I did not like the atmosphere of 
-            hospitals. 
+            I grew up in a town called Cary, IL and my education was extremely
+            standard. I attended and graduated from Cary-Grove Highschool and
+            went off to the University of Iowa to study to become a nurse. My
+            goals were quickly thwarted when I did some volunteer work at the
+            local hospital and realized I did not like the atmosphere of
+            hospitals.
           </p>
           <div class="fill-width">
             <a href="future-goals.html">
               <button class="cta">My Future Goals</button>
             </a>
           </div>
-          
         </div>
-        <div class="flex-col col-50 me_pic flex-center">
+        <div
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          class="flex-col col-50 me_pic flex-center"
+        >
           <img
             src="../assets/depaul.jpg"
             data-tilt
@@ -97,75 +110,139 @@
       </section>
       <!-- END OF HERO SECTION -->
 
-      <!-- START OF CARDS/SKILL SECTION -->
-      <section class="fullwidth off-white outter_cards slider">
-        <div class="splide" data-splide='{"type":"loop", "speed":700}'>
-            <div class="splide__track">
-                  <ul class="splide__list">
-                      <li class="splide__slide"><img src="https://i.ibb.co/gM1zh9w/bodie1.jpg" alt="Bodie"></li>
-                      <li class="splide__slide"><img src="https://i.ibb.co/kg1dbqD/quill1.jpg" alt="Quill"></li>
-                      <li class="splide__slide"><img src="https://i.ibb.co/zx5BG4m/IMG-6561.jpg" alt="My Wife and I"></li>
-                  </ul>
-            </div>
+      <!-- START OF SLIDESHOW -->
+      <section class="off-white top-bottom">
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <img src="https://i.ibb.co/gM1zh9w/bodie1.jpg" alt="Bodie" />
+              </li>
+              <li class="glide__slide">
+                <img src="https://i.ibb.co/kg1dbqD/quill1.jpg" alt="Quill" />
+              </li>
+              <li class="glide__slide">
+                <img
+                  src="https://i.ibb.co/zx5BG4m/IMG-6561.jpg"
+                  alt="My Wife and I"
+                />
+              </li>
+              <li class="glide__slide">
+                <img src="https://i.ibb.co/MDWHkN3/both1.jpg" alt="Quill and Bodie" />
+              </li>
+              <li class="glide__slide">
+                <img src="https://i.ibb.co/GvcTGgG/both2.jpg" alt="Quill and Bodie" />
+              </li>
+            </ul>
           </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              <img src="../assets/back-arrow.svg" alt="backward arrow">
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              <img src="../assets/forward-arrow.svg" alt="forward arrow">
+            </button>
+          </div>
+        </div>
       </section>
-      <!-- END OF CARDS SECTION -->
+      <!-- END OF SLIDESHOW -->
 
       <!-- FOOTER/END SECTION CONTACT INFO AND FORM -->
       <section class="fullwidth footer">
         <div class="flex-col flex-center top-bottom">
           <h1 class="section_header">Contant Info</h1>
-          <h3 class="section_subheader">Please reach out to me with any questions.</h3>
+          <h3 class="section_subheader">
+            Please reach out to me with any questions.
+          </h3>
         </div>
         <div class="medium-text flex-row flex-evenly">
           <div class="col-50 flex-row flex-around">
-            <p><a href="mailto:logan@lmurray.info"><img class="social-icon" src="../assets/email.png" alt="Email"></a></p>
-            <p><a href="https://www.linkedin.com/in/log-mur16/"><img class="social-icon" src="../assets/linkedin2.png" alt="LinkedIn Logo"></a></p>
+            <p>
+              <a href="mailto:logan@lmurray.info"
+                ><img class="social-icon" src="../assets/email.png" alt="Email"
+              /></a>
+            </p>
+            <p>
+              <a href="https://www.linkedin.com/in/log-mur16/"
+                ><img
+                  class="social-icon"
+                  src="../assets/linkedin2.png"
+                  alt="LinkedIn Logo"
+              /></a>
+            </p>
           </div>
           <div class="col-50 flex-row flex-around">
-            <p><a href="https://github.com/lpmurray16"><img class="social-icon" src="../assets/github.png" alt="GitHub Logo"></a></p>
-            <p><a href="https://codepen.io/lpmurray16"><img class="social-icon" src="../assets/coding.png" alt="Coding"></a></p>
+            <p>
+              <a href="https://github.com/lpmurray16"
+                ><img
+                  class="social-icon"
+                  src="../assets/github.png"
+                  alt="GitHub Logo"
+              /></a>
+            </p>
+            <p>
+              <a href="https://codepen.io/lpmurray16"
+                ><img
+                  class="social-icon"
+                  src="../assets/coding.png"
+                  alt="Coding"
+              /></a>
+            </p>
           </div>
         </div>
         <div class="wrap_form">
-        <form name="contact" method="POST" data-netlify="true">
-          <div>
+          <form name="contact" method="POST" data-netlify="true">
+            <div>
+              <p>
+                <label>Your Name: </label
+                ><input type="text" name="name" placeholder="John Doe" />
+              </p>
+              <p>
+                <label>Your Email: </label
+                ><input
+                  type="email"
+                  name="email"
+                  placeholder="youremail@email.com"
+                />
+              </p>
+            </div>
             <p>
-              <label>Your Name: </label><input type="text" name="name" placeholder="John Doe"/>   
+              <label>Subject: </label
+              ><input
+                type="text"
+                name="subject"
+                placeholder="Question/Opportunity/Comment/etc."
+              />
             </p>
             <p>
-              <label>Your Email: </label><input type="email" name="email" placeholder="youremail@email.com"/>
+              <label>Message: </label
+              ><textarea
+                name="message"
+                placeholder="Description of why you are reaching out..."
+              ></textarea>
             </p>
-          </div>
-          <p>
-            <label>Subject: </label><input type="text" name="subject" placeholder="Question/Opportunity/Comment/etc."/>
-          </p>
-          <p>
-            <label>Message: </label><textarea name="message" placeholder="Description of why you are reaching out..."></textarea>
-          </p>
-          <p>
-            <button class="bttn" type="submit">Submit</button>
-          </p>
-        </form>
-      </div>
+            <p>
+              <button class="bttn" type="submit">Submit</button>
+            </p>
+          </form>
+        </div>
         <div class="top-bottom flex-row flex-center">
-            <a href="#top"><button class="cta">To Top</button></a>
+          <a href="#top"><button class="cta">To Top</button></a>
         </div>
       </section>
       <!-- END FOOTER -->
     </div>
 
     <!-- Scripts -->
-    <script src="scripts/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.6/dist/js/splide.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        document.addEventListener( 'DOMContentLoaded', function() {
-          var splide = new Splide( '.splide' );
-          splide.mount();
-        } );
-      </script>
+      AOS.init();
+    </script>
+    <script src="../scripts/main.js"></script>
   </body>
   <!-- END SCRIPTS -->
 
