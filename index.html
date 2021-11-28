@@ -8,6 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="assets/boy.png" />
     <link rel="stylesheet" href="styles/style.css" />
     <script src="https://unpkg.com/scrollreveal@4"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -106,7 +107,7 @@
           </h3>
           <!-- ROW -->
           <div class="flex-row flex-center">
-            <div class="card">
+            <div data-aos="fade-up-right" class="card">
               <div class="card_top">
                 <img src="assets/html-css-js.png" alt="HTML/CSS/JS" />
                 <h2>HTML/CSS/JS</h2>
@@ -116,7 +117,7 @@
                 HTML/CSS/JS on top of my basic knowledge I had acquired at school and in personal projects.
               </p>
             </div>
-            <div class="card">
+            <div data-aos="fade-up-left" class="card">
               <div class="card_top">
                 <img src="assets/reactjs.png" alt="React" />
                 <h2>React</h2>
@@ -129,7 +130,7 @@
           </div>
           <!-- ROW -->
           <div class="flex-row flex-center">
-            <div class="card">
+            <div data-aos="fade-up-right" class="card">
               <div class="card_top">
                 <img src="assets/java.png" alt="Java" />
                 <h2>Java</h2>
@@ -139,7 +140,7 @@
                 systems classes were all C/C++. I do not enjoy C/C++ as much as I enjoy Java.
               </p>
             </div>
-            <div class="card">
+            <div data-aos="fade-up-left" class="card">
               <div class="card_top">
                 <img src="assets/python.png" alt="Python" />
                 <h2>Python</h2>
@@ -152,7 +153,7 @@
           </div>
           <!-- ROW -->
           <div class="flex-row flex-center">
-            <div class="card">
+            <div data-aos="fade-up-right" class="card">
               <div class="card_top">
                 <img src="assets/mysql.png" alt="SQL" />
                 <h2>SQL</h2>
@@ -162,7 +163,7 @@
                 throughout the course I have found it is good practice to get fimiliar with opensource tools like MySQL.
               </p>
             </div>
-            <div class="card">
+            <div data-aos="fade-up-left" class="card">
               <div class="card_top">
                 <img src="assets/wordpress.png" alt="WordPress" />
                 <h2>WordPress</h2>
@@ -185,12 +186,12 @@
         </div>
         <div class="medium-text flex-row flex-evenly">
           <div class="col-50 flex-row flex-around">
-            <p><a href="mailto:logan@lmurray.info"><img src="assets/email.png" alt="Email"></a></p>
-            <p><a href="https://www.linkedin.com/in/log-mur16/"><img src="assets/linkedin2.png" alt="LinkedIn Logo"></a></p>
+            <p><a href="mailto:logan@lmurray.info"><img class="social-icon" src="assets/email.png" alt="Email"></a></p>
+            <p><a href="https://www.linkedin.com/in/log-mur16/"><img class="social-icon" src="assets/linkedin2.png" alt="LinkedIn Logo"></a></p>
           </div>
           <div class="col-50 flex-row flex-around">
-            <p><a href="https://github.com/lpmurray16"><img src="assets/github.png" alt="GitHub Logo"></a></p>
-            <p><a href="https://codepen.io/lpmurray16"><img src="assets/coding.png" alt="Coding"></a></p>
+            <p><a href="https://github.com/lpmurray16"><img class="social-icon" src="assets/github.png" alt="GitHub Logo"></a></p>
+            <p><a href="https://codepen.io/lpmurray16"><img class="social-icon" src="assets/coding.png" alt="Coding"></a></p>
           </div>
         </div>
         <div class="wrap_form">
@@ -223,6 +224,10 @@
 
     <!-- Scripts -->
     <script src="scripts/main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
   </body>

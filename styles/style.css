@@ -451,6 +451,13 @@ form p {
   margin: 0 auto;
   max-width: 500px;
 }
+
+.social-icon {
+  transition: all 300ms ease;
+}
+.social-icon:hover {
+  transform: scale(0.9);
+}
 /* end of footer */
 
 

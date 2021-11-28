@@ -24,11 +24,11 @@ outsideNav.addEventListener("click", (e) => {
 });
 
 var slideUp = {
-  distance: '200%',
+  distance: '400%',
   origin: 'bottom',
   opacity: null,
-  delay: 300,
-  duration: 600,
+  delay: 400,
+  duration: 800,
   easing: 'ease'
 };
 var slideRight = {
@@ -50,6 +50,6 @@ var slideLeft = {
   easing: 'ease'
 };
 
-ScrollReveal().reveal('.card', slideUp);
+// ScrollReveal().reveal('.card', slideUp);
 ScrollReveal().reveal('.me_pic', slideRight);
 ScrollReveal().reveal('.me_text', slideLeft);
