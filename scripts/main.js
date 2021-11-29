@@ -44,36 +44,3 @@ new Glide('.glide', {
   }
 }).mount()
 
-
-
-// Animation JS
-var slideUp = {
-  distance: '400%',
-  origin: 'bottom',
-  opacity: null,
-  delay: 400,
-  duration: 800,
-  easing: 'ease'
-};
-var slideRight = {
-  distance: '150%',
-  origin: 'right',
-  opacity: null,
-  delay: 300,
-  duration: 600,
-  reset: true,
-  easing: 'ease'
-};
-var slideLeft = {
-  distance: '150%',
-  origin: 'left',
-  opacity: null,
-  delay: 300,
-  duration: 600,
-  reset: true,
-  easing: 'ease'
-};
-
-// ScrollReveal().reveal('.card', slideUp);
-ScrollReveal().reveal('.me_pic', slideRight);
-ScrollReveal().reveal('.me_text', slideLeft);

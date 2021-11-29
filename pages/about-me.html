@@ -25,7 +25,7 @@
     <div id="top"></div>
     <div class="header">
       <div class="icon_title">
-        <a id="home_icon" href="/index.html"
+        <a id="home_icon" href="/"
           ><img src="../assets/gamer_desk.png" alt="Icon" class="icon"
         /></a>
         <h1 class="top_title">Logan Murray's Online Portfolio</h1>
@@ -58,8 +58,12 @@
           <!-- The nav inside -->
           <nav class="sidebar_nav">
             <ul class="sidebar_nav_list">
-              <a href="about-me.html"><li class="list_item">About Me</li></a>
-              <a href="projects.html"><li class="list_item">Projects</li></a>
+              <a href="about-me.html"
+                ><li class="list_item">About Me</li></a
+              >
+              <a href="projects.html"
+                ><li class="list_item">Projects</li></a
+              >
               <a href="future-goals.html">
                 <li class="list_item">Future Goals</li></a
               >
@@ -68,6 +72,7 @@
         </div>
       </div>
     </div>
+    <!-- END HEADER -->
 
     <div class="main_content">
       <!-- START HERO SECTION -->
@@ -128,19 +133,25 @@
                 />
               </li>
               <li class="glide__slide">
-                <img src="https://i.ibb.co/MDWHkN3/both1.jpg" alt="Quill and Bodie" />
+                <img
+                  src="https://i.ibb.co/MDWHkN3/both1.jpg"
+                  alt="Quill and Bodie"
+                />
               </li>
               <li class="glide__slide">
-                <img src="https://i.ibb.co/GvcTGgG/both2.jpg" alt="Quill and Bodie" />
+                <img
+                  src="https://i.ibb.co/GvcTGgG/both2.jpg"
+                  alt="Quill and Bodie"
+                />
               </li>
             </ul>
           </div>
           <div class="glide__arrows" data-glide-el="controls">
             <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-              <img src="../assets/back-arrow.svg" alt="backward arrow">
+              <img src="../assets/back-arrow.svg" alt="backward arrow" />
             </button>
             <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-              <img src="../assets/forward-arrow.svg" alt="forward arrow">
+              <img src="../assets/forward-arrow.svg" alt="forward arrow" />
             </button>
           </div>
         </div>
@@ -148,88 +159,97 @@
       <!-- END OF SLIDESHOW -->
 
       <!-- FOOTER/END SECTION CONTACT INFO AND FORM -->
-      <section class="fullwidth footer">
-        <div class="flex-col flex-center top-bottom">
-          <h1 class="section_header">Contant Info</h1>
-          <h3 class="section_subheader">
-            Please reach out to me with any questions.
-          </h3>
-        </div>
-        <div class="medium-text flex-row flex-evenly">
-          <div class="col-50 flex-row flex-around">
-            <p>
-              <a href="mailto:logan@lmurray.info"
-                ><img class="social-icon" src="../assets/email.png" alt="Email"
-              /></a>
-            </p>
-            <p>
-              <a href="https://www.linkedin.com/in/log-mur16/"
-                ><img
-                  class="social-icon"
-                  src="../assets/linkedin2.png"
-                  alt="LinkedIn Logo"
-              /></a>
-            </p>
+      <section class="fullwidth footer flex-row flex-wrap">
+        <!-- left -->
+        <div class="flex-col col-50">
+          <div class="flex-col flex-center top-bottom">
+            <h1 class="section_header">Contact Info</h1>
+            <h3 class="section_subheader">
+              Please reach out to me with any questions.
+            </h3>
           </div>
-          <div class="col-50 flex-row flex-around">
-            <p>
-              <a href="https://github.com/lpmurray16"
-                ><img
-                  class="social-icon"
-                  src="../assets/github.png"
-                  alt="GitHub Logo"
-              /></a>
-            </p>
-            <p>
-              <a href="https://codepen.io/lpmurray16"
-                ><img
-                  class="social-icon"
-                  src="../assets/coding.png"
-                  alt="Coding"
-              /></a>
-            </p>
-          </div>
-        </div>
-        <div class="wrap_form">
-          <form name="contact" method="POST" data-netlify="true">
-            <div>
+          <div class="medium-text flex-col top-bottom flex-evenly">
+            <div class="flex-row flex-evenly top-bottom">
               <p>
-                <label>Your Name: </label
-                ><input type="text" name="name" placeholder="John Doe" />
+                <a href="mailto:logan@lmurray.info"
+                  ><img
+                    class="social-icon"
+                    src="../assets/email.png"
+                    alt="Email"
+                /></a>
               </p>
               <p>
-                <label>Your Email: </label
-                ><input
-                  type="email"
-                  name="email"
-                  placeholder="youremail@email.com"
-                />
+                <a href="https://www.linkedin.com/in/log-mur16/" rel="noopener noreferrer" target="_blank"
+                  ><img
+                    class="social-icon"
+                    src="../assets/linkedin2.png"
+                    alt="LinkedIn Logo"
+                /></a>
               </p>
             </div>
-            <p>
-              <label>Subject: </label
-              ><input
-                type="text"
-                name="subject"
-                placeholder="Question/Opportunity/Comment/etc."
-              />
-            </p>
-            <p>
-              <label>Message: </label
-              ><textarea
-                name="message"
-                placeholder="Description of why you are reaching out..."
-              ></textarea>
-            </p>
-            <p>
-              <button class="bttn" type="submit">Submit</button>
-            </p>
-          </form>
+            <div class="flex-row flex-evenly top-bottom">
+              <p>
+                <a href="https://github.com/lpmurray16" rel="noopener noreferrer" target="_blank"
+                  ><img
+                    class="social-icon"
+                    src="../assets/github.png"
+                    alt="GitHub Logo"
+                /></a>
+              </p>
+              <p>
+                <a href="https://codepen.io/lpmurray16" rel="noopener noreferrer" target="_blank"
+                  ><img
+                    class="social-icon"
+                    src="../assets/coding.png"
+                    alt="Coding"
+                /></a>
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="top-bottom flex-row flex-center">
-          <a href="#top"><button class="cta">To Top</button></a>
+
+        <div class="flex-col col-50">
+          <div class="wrap_form">
+            <form name="contact" method="POST" data-netlify="true">
+              <div>
+                <p>
+                  <label>Your Name: </label
+                  ><input type="text" name="name" placeholder="John Doe" />
+                </p>
+                <p>
+                  <label>Your Email: </label
+                  ><input
+                    type="email"
+                    name="email"
+                    placeholder="youremail@email.com"
+                  />
+                </p>
+              </div>
+              <p>
+                <label>Subject: </label
+                ><input
+                  type="text"
+                  name="subject"
+                  placeholder="Question/Opportunity/Comment/etc."
+                />
+              </p>
+              <p>
+                <label>Message: </label
+                ><textarea
+                  name="message"
+                  placeholder="Description of why you are reaching out..."
+                ></textarea>
+              </p>
+              <p>
+                <button class="bttn" type="submit">Submit</button>
+              </p>
+            </form>
+          </div>
         </div>
       </section>
+      <div class="top-bottom flex-row flex-center anchor-top">
+        <a href="#top"><button class="cta">To Top</button></a>
+      </div>
       <!-- END FOOTER -->
     </div>
 

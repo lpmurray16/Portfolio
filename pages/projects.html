@@ -8,17 +8,12 @@
     <link rel="shortcut icon" type="image/png" href="../assets/boy.png" />
     <link rel="stylesheet" href="..\styles\style.css" />
     <link rel="stylesheet" href="..\styles\about-me.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.3/dist/css/splide.min.css">
-    <script src="https://unpkg.com/scrollreveal@4"></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
   </head>
-
 
   <!-- BODY START -->
   <body>
@@ -26,14 +21,18 @@
     <div id="top"></div>
     <div class="header">
       <div class="icon_title">
-        <a id="home_icon" href="/index.html"><img src="../assets/gamer_desk.png" alt="Icon" class="icon" /></a>
+        <a id="home_icon" href="/"
+          ><img src="../assets/gamer_desk.png" alt="Icon" class="icon"
+        /></a>
         <h1 class="top_title">Logan Murray's Online Portfolio</h1>
       </div>
       <nav class="outter_nav">
         <ul class="nav_list">
           <li class="list_item"><a href="about-me.html">About Me</a></li>
           <li class="list_item"><a href="projects.html">Projects</a></li>
-          <li class="list_item"><a href="future-goals.html">Future Goals</a></li>
+          <li class="list_item">
+            <a href="future-goals.html">Future Goals</a>
+          </li>
         </ul>
       </nav>
       <!-- Hamburger Menu Start -->
@@ -57,12 +56,15 @@
             <ul class="sidebar_nav_list">
               <a href="about-me.html"><li class="list_item">About Me</li></a>
               <a href="projects.html"><li class="list_item">Projects</li></a>
-             <a href="future-goals.html"> <li class="list_item">Future Goals</li></a>
+              <a href="future-goals.html">
+                <li class="list_item">Future Goals</li></a
+              >
             </ul>
           </nav>
         </div>
       </div>
     </div>
+    <!-- END HEADER -->
 
     <div class="main_content">
       <!-- START HERO SECTION -->
@@ -73,14 +75,14 @@
           </div>
 
           <p class="top-bottom medium-text">
-            I will post my projects here directly when I get the chance. But check out my GitHub!
+            I will post my projects here directly when I get the chance. But
+            check out my <a href="https://github.com/lpmurray16" rel="noopener noreferrer" target="_blank">GitHub!</a>
           </p>
           <div class="fill-width">
             <a href="about-me.html">
               <button class="cta">Learn More About Me</button>
             </a>
           </div>
-          
         </div>
         <div class="flex-col col-50 me_pic flex-center">
           <img
@@ -100,60 +102,107 @@
       <!-- END OF CARDS SECTION -->
 
       <!-- FOOTER/END SECTION CONTACT INFO AND FORM -->
-      <section class="fullwidth footer">
-        <div class="flex-col flex-center top-bottom">
-          <h1 class="section_header">Contant Info</h1>
-          <h3 class="section_subheader">Please reach out to me with any questions.</h3>
+      <!-- FOOTER/END SECTION CONTACT INFO AND FORM -->
+      <section class="fullwidth footer flex-row flex-wrap">
+        <!-- left -->
+        <div class="flex-col col-50">
+          <div class="flex-col flex-center top-bottom">
+            <h1 class="section_header">Contact Info</h1>
+            <h3 class="section_subheader">
+              Please reach out to me with any questions.
+            </h3>
+          </div>
+          <div class="medium-text flex-col top-bottom flex-evenly">
+            <div class="flex-row flex-evenly top-bottom">
+              <p>
+                <a href="mailto:logan@lmurray.info"
+                  ><img
+                    class="social-icon"
+                    src="../assets/email.png"
+                    alt="Email"
+                /></a>
+              </p>
+              <p>
+                <a href="https://www.linkedin.com/in/log-mur16/" rel="noopener noreferrer" target="_blank"
+                  ><img
+                    class="social-icon"
+                    src="../assets/linkedin2.png"
+                    alt="LinkedIn Logo"
+                /></a>
+              </p>
+            </div>
+            <div class="flex-row flex-evenly top-bottom">
+              <p>
+                <a href="https://github.com/lpmurray16" rel="noopener noreferrer" target="_blank"
+                  ><img
+                    class="social-icon"
+                    src="../assets/github.png"
+                    alt="GitHub Logo"
+                /></a>
+              </p>
+              <p>
+                <a href="https://codepen.io/lpmurray16" rel="noopener noreferrer" target="_blank"
+                  ><img
+                    class="social-icon"
+                    src="../assets/coding.png"
+                    alt="Coding"
+                /></a>
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="medium-text flex-row flex-evenly">
-          <div class="col-50 flex-row flex-around">
-            <p><a href="mailto:logan@lmurray.info"><img class="social-icon" src="../assets/email.png" alt="Email"></a></p>
-            <p><a href="https://www.linkedin.com/in/log-mur16/"><img class="social-icon" src="../assets/linkedin2.png" alt="LinkedIn Logo"></a></p>
+
+        <div class="flex-col col-50">
+          <div class="wrap_form">
+            <form name="contact" method="POST" data-netlify="true">
+              <div>
+                <p>
+                  <label>Your Name: </label
+                  ><input type="text" name="name" placeholder="John Doe" />
+                </p>
+                <p>
+                  <label>Your Email: </label
+                  ><input
+                    type="email"
+                    name="email"
+                    placeholder="youremail@email.com"
+                  />
+                </p>
+              </div>
+              <p>
+                <label>Subject: </label
+                ><input
+                  type="text"
+                  name="subject"
+                  placeholder="Question/Opportunity/Comment/etc."
+                />
+              </p>
+              <p>
+                <label>Message: </label
+                ><textarea
+                  name="message"
+                  placeholder="Description of why you are reaching out..."
+                ></textarea>
+              </p>
+              <p>
+                <button class="bttn" type="submit">Submit</button>
+              </p>
+            </form>
           </div>
-          <div class="col-50 flex-row flex-around">
-            <p><a href="https://github.com/lpmurray16"><img class="social-icon" src="../assets/github.png" alt="GitHub Logo"></a></p>
-            <p><a href="https://codepen.io/lpmurray16"><img class="social-icon" src="../assets/coding.png" alt="Coding"></a></p>
-          </div>
-        </div>
-        <div class="wrap_form">
-        <form name="contact" method="POST" data-netlify="true">
-          <div>
-            <p>
-              <label>Your Name: </label><input type="text" name="name" placeholder="John Doe"/>   
-            </p>
-            <p>
-              <label>Your Email: </label><input type="email" name="email" placeholder="youremail@email.com"/>
-            </p>
-          </div>
-          <p>
-            <label>Subject: </label><input type="text" name="subject" placeholder="Question/Opportunity/Comment/etc."/>
-          </p>
-          <p>
-            <label>Message: </label><textarea name="message" placeholder="Description of why you are reaching out..."></textarea>
-          </p>
-          <p>
-            <button class="bttn" type="submit">Submit</button>
-          </p>
-        </form>
-      </div>
-        <div class="top-bottom flex-row flex-center">
-            <a href="#top"><button class="cta">To Top</button></a>
         </div>
       </section>
+      <div class="top-bottom flex-row flex-center anchor-top">
+        <a href="#top"><button class="cta">To Top</button></a>
+      </div>
       <!-- END FOOTER -->
     </div>
 
     <!-- Scripts -->
-    <script src="scripts/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.6/dist/js/splide.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
-    <script>
-        document.addEventListener( 'DOMContentLoaded', function() {
-          var splide = new Splide( '.splide' );
-          splide.mount();
-        } );
-      </script>
+    <script src="../scripts/main.js"></script>
+    
   </body>
   <!-- END SCRIPTS -->
 
