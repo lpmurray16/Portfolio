@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/png" href="../assets/boy.png" />
     <link rel="stylesheet" href="..\styles\style.css" />
     <link rel="stylesheet" href="..\styles\about-me.css" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -69,7 +69,7 @@
     <div class="main_content">
       <!-- START HERO SECTION -->
       <section class="fullwidth hero">
-        <div class="flex-col col-50 me_text flex-center">
+        <div data-aos="fade-right" class="flex-col col-50 me_text flex-center">
           <div class="fill-width">
             <h1 id="title_name">Projects</h1>
           </div>
@@ -84,7 +84,7 @@
             </a>
           </div>
         </div>
-        <div class="flex-col col-50 me_pic flex-center">
+        <div data-aos="fade-left" class="flex-col col-50 me_pic flex-center">
           <img
             src="../assets/guy_at_desk.svg"
             data-tilt
@@ -201,6 +201,10 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="../scripts/main.js"></script>
     
   </body>

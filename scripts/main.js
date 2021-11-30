@@ -32,6 +32,7 @@ new Glide('.glide', {
   perView: 3,
   focusAt: 'center',
   autoplay: 3000,
+  gap: 20,
   hoverpause: true,
   animationDuration: 800,
   breakpoints: {

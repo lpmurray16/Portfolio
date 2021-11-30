@@ -13,6 +13,9 @@
     max-width: 94%;
     border-radius: 3px;
 }
+.orange-underline {
+    text-decoration: underline var(--orange);
+}
 
 /* slideshow css */
 .glide {
@@ -22,17 +25,25 @@
     display: flex;
     justify-content: center;
 }
-.glide__slide img {
-    max-height: 400px;
+.glide__slide figure img {
+    max-height: 500px;
     max-width: 100%;
+    border-radius: 3px;
 }
 .glide__arrows {
     display: flex;
     justify-content: center;
-    gap: 0.6em;
+    gap: 3.6em;
     margin-top: 1em;
 }
 .glide__arrows button {
     border: none;
     background: transparent;
+}
+figure figcaption {
+    position: absolute;
+    bottom: 1%;
+    padding: 0.75rem;
+    color:var(--headline);
+    background-color: var(--peachy);
 }
