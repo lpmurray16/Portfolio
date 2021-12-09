@@ -585,13 +585,13 @@ body {
   .col_50-100 {
     width: 100%;
   }
-  .me_pic {
+  .stack-top {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
     padding-top: 3em;
   }
-  .me_text {
+  .stack-bottom {
     padding-top: 3em;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
