@@ -5,10 +5,10 @@ const menu = document.querySelector(".cover");
 const outsideNav = document.querySelector(".cover__overlay");
 
 const toggleNav = (menu) => {
-  if (menu.classList.contains("out_of_frame")) {
-    menu.classList.remove("out_of_frame");
+  if (menu.classList.contains("off_canvas-x")) {
+    menu.classList.remove("off_canvas-x");
   } else {
-    menu.classList.add("out_of_frame");
+    menu.classList.add("off_canvas-x");
   }
 };
 

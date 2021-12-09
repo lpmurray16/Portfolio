@@ -1,0 +1,542 @@
+// Refactoring my website to include SASS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Sora, "Trebuchet MS", Helvetica, sans-serif;
+}
+
+$background: #0f0e17;
+$orange: #ff8906;
+$headline: #fffffe;
+$button-text: #fffffe;
+$paragraph: #a7a9be;
+$peachy: #f25f4c;
+$extra: #e53170;
+
+///////// SCROLLBAR ////////////
+
+/* width of scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track color */
+::-webkit-scrollbar-track {
+    background: $paragraph;
+}
+
+/* Handle color */
+::-webkit-scrollbar-thumb {
+    background: $orange;
+    border-radius: 5px;
+}
+
+/* Handle on hover color */
+::-webkit-scrollbar-thumb:hover {
+    background: $peachy;
+}
+
+/////// END OF SCROLLBAR //////////////
+
+/////////////////// UTIL CLASSES ///////////////
+.off-white {
+    color: $headline;
+}
+.soft-gray {
+    color: $paragraph;
+}
+.bg-orange {
+    background-color: $orange;
+}
+.img-circle {
+    border-radius: 50%;
+}
+.fancy-border {
+    box-shadow: 0 0 0 10px $peachy, 0 0 0 20px $extra;
+}
+.w100 {
+    width: 100%;
+}
+.p08 {
+    padding: 0.8em;
+}
+.top_bottom-p1 {
+    padding: 1em 0;
+}
+.txt-center {
+    text-align: center;
+}
+.txt-medium {
+    font-size: 1.3rem;
+    line-height: 1.8;
+}
+.txt-large {
+    font-size: 2.4rem;
+}
+.txt-xlarge {
+    font-size: 3.5rem;
+}
+.col {
+    &_50-100 {
+        width: 50%;
+    }
+}
+.hero {
+    height: 100vh;
+    padding-top: 5.45em;
+}
+// HELPER CLASSES FOR BACKGROUND CONTRAST
+.bg-dark {
+    z-index: 1;
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    li,
+    ul,
+    span,
+    a {
+        color: $headline;
+    }
+    background: url(/assets/new_bg.svg) no-repeat;
+    background-size: cover;
+}
+.bg-light {
+    z-index: 1;
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    li,
+    ul,
+    span,
+    a {
+        color: $background;
+    }
+    background-color: $headline;
+}
+// FLEX util classes
+.flex {
+    display: flex;
+    &_wrap {
+        flex-wrap: wrap;
+    }
+    &_stretch-y {
+        align-items: stretch;
+    }
+    &_col {
+        flex-flow: column;
+    }
+    &_center {
+        justify-content: center;
+    }
+    &_center-all {
+        justify-content: center;
+        align-items: center;
+    }
+    &_between {
+        justify-content: space-between;
+    }
+    &_around {
+        justify-content: space-around;
+    }
+    &_evenly {
+        justify-content: space-evenly;
+    }
+}
+// specific to transformations and animations
+.off_canvas-x {
+    transform: translateX(100%);
+}
+///////////// END util classes////////////////////
+
+////////////// single elements///////////////////////
+
+// every section found in main
+section {
+    &:last-of-type {
+        padding: 3vw 5vw 7vw;
+    }
+    padding: 3vw 5vw 10vw;
+}
+
+// all lone anchor tags
+a {
+    color: $headline;
+    text-decoration: underline $orange;
+    transition: all 300ms ease;
+    &:hover {
+        color: $peachy;
+        text-decoration: underline $extra;
+    }
+}
+
+// buttons
+.cta {
+    color: $button-text;
+    background-color: $orange;
+    padding: 1.2rem 2rem;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: all 400ms ease;
+    &:hover,
+    &:focus {
+        box-shadow: inset 0 -3.75em 0 0 $peachy;
+    }
+}
+
+// images
+img {
+    max-width: 100%;
+}
+
+// inputs
+/* input containers */
+form {
+    width: 100%;
+    p {
+        label,
+        input {
+            display: block;
+            margin-bottom: 0.5em;
+        }
+        display: block;
+        margin-bottom: 0.7em;
+    }
+    input,
+    textarea {
+        border: 2px solid $orange;
+        background: $background;
+        padding: 16px;
+        color: $headline;
+        width: 100%;
+    }
+}
+.anchor-top {
+    padding-top: 5vw;
+}
+::placeholder {
+    color: $paragraph;
+}
+
+/* end of input */
+
+////////////////// END of single elements/////////////////////
+
+///////////////// Start Body and Below CSS///////////////////
+body {
+    height: 100vh;
+    background-color: $background;
+    z-index: 0;
+    overflow-x: hidden;
+}
+
+/////////////////// TOP BAR NAVIGATION AND ICON/TITLE //////////////////
+.header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1em;
+    position: absolute;
+    top: 0;
+    .desktop-nav {
+        display: flex;
+        align-items: center;
+        padding: 1em;
+        width: 30%;
+    }
+}
+
+/* icon at the top left of every page */
+#home_icon {
+    transition: all 300ms ease;
+    &:hover {
+        filter: drop-shadow(1px 1px 3px $peachy);
+    }
+}
+.icon {
+    width: 50px;
+    height: auto;
+    margin: 1em;
+    &_title {
+        display: flex;
+        align-items: center;
+        width: 70%;
+        h1 {
+            font-size: 1.13em;
+            color: $headline;
+        }
+    }
+}
+
+// start of top right navigation
+.nav_list {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    .list_item {
+        a {
+            text-decoration: none;
+            color: $headline;
+        }
+        transition: all 300ms ease;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+////////////////// END of top bar navigation and icon/////////////////@at-root
+
+//////// Start of the mobile navigation menu ////////////
+.cover {
+    /* Container takes full size */
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all 400ms ease;
+    z-index: 9999;
+    &__overlay {
+        /* Take full size */
+        height: 100%;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 100%;
+
+        /* User still can see the content of main page */
+        background-color: rgba(0, 0, 0, 0.5);
+
+        z-index: -1;
+    }
+
+    &__sidebar {
+        /* Take full height */
+        height: 100%;
+        right: 0;
+        position: fixed;
+        top: 0;
+        width: 200px;
+
+        /* Background */
+        background-color: $background;
+    }
+}
+// the close button inside the menu
+.close__nav {
+    /* Reset */
+    background-color: transparent;
+    border-color: transparent;
+
+    /* Cursor */
+    cursor: pointer;
+
+    /* Size */
+    height: 32px;
+    width: 32px;
+    margin: 1em;
+
+    /* Used to position the inner */
+    position: relative;
+    float: right;
+}
+.button__line {
+    /* Background color */
+    background-color: $headline;
+
+    /* Position */
+    position: absolute;
+
+    /* Size */
+    height: 2px;
+    width: 100%;
+
+    &--first {
+        /* Position */
+        left: 0px;
+        top: 50%;
+        transform: translate(0%, -50%) rotate(45deg);
+
+        /* Size */
+        height: 2px;
+        width: 100%;
+    }
+
+    &--second {
+        /* Position */
+        left: 50%;
+        top: 0px;
+        transform: translate(-50%, 0%) rotate(45deg);
+
+        /* Size */
+        height: 100%;
+        width: 2px;
+    }
+}
+// Menu hamburger icon and text
+.menu__container {
+    display: none;
+
+    &__text {
+        color: $headline;
+    }
+}
+
+.hamburger__icon {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 30px;
+    text-rendering: auto;
+    line-height: 1;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+    padding: 0.4em;
+    cursor: pointer;
+    &::before {
+        content: "\f0c9";
+        filter: invert(1);
+    }
+}
+.sidebar_nav {
+    margin-top: 60px;
+    &_list {
+        list-style: none;
+        a {
+            text-decoration: none;
+            &:hover {
+                text-decoration: none;
+                color: $headline;
+            }
+        }
+        .list_item {
+            padding: 0.5em 0;
+            text-align: center;
+            background-color: $peachy;
+            border-top: 2px solid $orange;
+            &:hover {
+                padding: 0.5em 0;
+                text-align: center;
+                background-color: $orange;
+                border-top: 2px solid $peachy;
+            }
+        }
+    }
+}
+///////// END of the menu on mobile ////////////////////
+
+////////// MAIN CONTENT wraps every page after body /////////
+
+///// For Beginning A New Section /////////////////
+.section {
+    &_header {
+        font-size: 1.9em;
+        line-height: 1.8;
+        text-align: center;
+        max-width: 40ch;
+        margin: 0 auto 0.5em;
+        padding-top: 1vw;
+    }
+    &_caption {
+        line-height: 1.8;
+        text-align: center;
+        max-width: 40ch;
+        margin: 0 auto 3em;
+    }
+}
+
+/////////////// Card CSS //////////////////////
+
+.card {
+    background: $background;
+    border-radius: 4px;
+    padding: 1em;
+    width: 25ch;
+    margin: 1vw;
+    &_top {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+    & img {
+        max-width: 64px;
+        max-height: 64px;
+    }
+    h1,
+    h2 {
+        color: $headline;
+    }
+    p {
+        color: $paragraph;
+    }
+}
+//////// END CARDS ///////////////////
+
+///////// FOOTER STUFF /////////////////
+.social-icon {
+    transition: all 300ms ease;
+    &:hover {
+        transform: scale(0.9);
+    }
+}
+/////////////// END FOOTER //////////////////////
+
+/////////////////// MEDIA QUERIES /////////////////////
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+    // mobile navigation!
+    .header .desktop-nav {
+        display: none;
+    }
+    .menu {
+        &__text {
+            color: $headline;
+        }
+        &__container {
+            display: flex;
+            padding: 0 3vw;
+        }
+    }
+
+    // end mobile nav
+    .hero {
+        height: auto;
+    }
+    .col {
+        &_50-100 {
+            width: 100%;
+        }
+    }
+    .me_pic {
+        order: 1;
+        padding-top: 3em;
+    }
+    .me_text {
+        padding-top: 3em;
+        order: 2;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+}
+
+@media (max-width: 575.98px) {
+}
