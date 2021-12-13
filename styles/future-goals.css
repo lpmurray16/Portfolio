@@ -1,0 +1,77 @@
+.zigzag-timeline__item {
+  /* Used to position the milestone */
+  position: relative;
+  /* Border */
+  border-bottom: 1px solid #71717a;
+  /* Take full width */
+  width: 100%;
+  /* Padding */
+  padding: 3em;
+  /* Styles for even items */
+  /* Styles for odd items */
+}
+
+.zigzag-timeline__item h2 {
+  margin-bottom: 0.75rem;
+}
+
+.zigzag-timeline__item p {
+  max-width: 80ch;
+}
+
+.zigzag-timeline__item:nth-child(2n) {
+  border-left: 1px solid #71717a;
+}
+
+.zigzag-timeline__item:nth-child(2n) .zigzag-timeline__milestone {
+  left: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.zigzag-timeline__item:nth-child(2n) .circle {
+  position: absolute;
+  left: -25px;
+}
+
+.zigzag-timeline__item:nth-child(2n + 1) {
+  border-right: 1px solid #71717a;
+}
+
+.zigzag-timeline__item:nth-child(2n + 1) .zigzag-timeline__milestone {
+  right: 0;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.zigzag-timeline__item:nth-child(2n + 1) .circle {
+  position: absolute;
+  right: -25px;
+}
+
+.zigzag-timeline__item:nth-child(2n + 1) h2 {
+  text-align: right;
+}
+
+.zigzag-timeline__item:nth-child(2n + 1) p {
+  margin-left: auto;
+}
+
+.zigzag-timeline__milestone {
+  /* Absolute position */
+  position: absolute;
+  top: 50%;
+}
+
+#ms-date {
+  color: #f25f4c !important;
+}
+
+.circle {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #ff8906;
+  border: 7px inset #e53170;
+}
+/*# sourceMappingURL=future-goals.css.map */

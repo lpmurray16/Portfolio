@@ -1,0 +1,72 @@
+@import "./variables";
+
+.zigzag-timeline__item {
+    /* Used to position the milestone */
+    position: relative;
+
+    /* Border */
+    border-bottom: 1px solid #71717a;
+
+    /* Take full width */
+    width: 100%;
+
+    /* Padding */
+    padding: 3em;
+
+    & h2 {
+        margin-bottom: 0.75rem;
+    }
+
+    & p {
+        max-width: 80ch;
+    }
+
+    /* Styles for even items */
+    &:nth-child(2n) {
+        border-left: 1px solid #71717a;
+    }
+    &:nth-child(2n) .zigzag-timeline__milestone {
+        left: 0;
+        transform: translate(-50%, -50%);
+    }
+    &:nth-child(2n) .circle {
+        position: absolute;
+        left: -25px;
+    }
+
+    /* Styles for odd items */
+    &:nth-child(2n + 1) {
+        border-right: 1px solid #71717a;
+    }
+    &:nth-child(2n + 1) .zigzag-timeline__milestone {
+        right: 0;
+        transform: translate(50%, -50%);
+    }
+    &:nth-child(2n + 1) .circle {
+        position: absolute;
+        right: -25px;
+    }
+    &:nth-child(2n + 1) h2 {
+        text-align: right;
+    }
+    &:nth-child(2n + 1) p {
+        margin-left: auto;
+    }
+}
+
+.zigzag-timeline__milestone {
+    /* Absolute position */
+    position: absolute;
+    top: 50%;
+}
+#ms-date {
+    color: $peachy !important;
+}
+
+.circle {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: $orange;
+    border: 7px inset $extra;
+}
