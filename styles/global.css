@@ -635,10 +635,13 @@ body {
     line-height: 1.8;
     text-align: left;
     max-width: 40ch;
-    margin: 0 auto 0;
+    margin: 0 auto 2em;
   }
   .hero img {
     max-width: 90%;
+  }
+  .top_bottom-p1 {
+    padding: 2em 0;
   }
 }
 /*# sourceMappingURL=global.css.map */
