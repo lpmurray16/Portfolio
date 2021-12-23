@@ -523,7 +523,7 @@ body {
 
 .section_caption {
   line-height: 1.8;
-  text-align: center;
+  text-align: left;
   max-width: 40ch;
   margin: 0 auto 3em;
 }
@@ -633,7 +633,7 @@ body {
   }
   .section_caption {
     line-height: 1.8;
-    text-align: center;
+    text-align: left;
     max-width: 40ch;
     margin: 0 auto 0;
   }
