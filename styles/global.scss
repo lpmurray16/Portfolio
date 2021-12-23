@@ -462,6 +462,7 @@ body {
     background: $background;
     border-radius: 4px;
     padding: 1em;
+    min-width: 25ch;
     width: 25ch;
     margin: 1vw;
     &_top {

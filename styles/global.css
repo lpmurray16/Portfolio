@@ -532,6 +532,7 @@ body {
   background: #0f0e17;
   border-radius: 4px;
   padding: 1em;
+  min-width: 25ch;
   width: 25ch;
   margin: 1vw;
 }
