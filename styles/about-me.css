@@ -7,7 +7,7 @@
     --paragraph: #a7a9be;
     --peachy: #f25f4c;
     --extra: #e53170;
-  }
+}
 
 .loop_pic {
     max-width: 94%;
@@ -41,9 +41,8 @@
     background: transparent;
 }
 figure figcaption {
-    position: absolute;
-    bottom: 1%;
     padding: 0.75rem;
-    color:var(--headline);
+    color: var(--headline);
     background-color: var(--peachy);
+    text-align: center;
 }
