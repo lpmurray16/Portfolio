@@ -44,6 +44,10 @@
 .bg-orange {
     background-color: $orange;
 }
+.bg-gradient {
+    background: $orange;
+    background: linear-gradient(155deg, $orange 16%, $peachy 53%, $extra 92%);
+}
 .img-circle {
     border-radius: 50%;
 }
@@ -177,7 +181,8 @@ a {
 // buttons
 .cta {
     color: $button-text;
-    background-color: $orange;
+    background: $orange;
+    background: linear-gradient(155deg, $orange 16%, $peachy 53%, $extra 92%);
     padding: 1.2rem 2rem;
     border-radius: 4px;
     font-size: 1.1rem;

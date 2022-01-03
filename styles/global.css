@@ -40,6 +40,11 @@
   background-color: #ff8906;
 }
 
+.bg-gradient {
+  background: #ff8906;
+  background: linear-gradient(155deg, #ff8906 16%, #f25f4c 53%, #e53170 92%);
+}
+
 .img-circle {
   border-radius: 50%;
 }
@@ -212,7 +217,8 @@ a:hover {
 
 .cta {
   color: #fffffe;
-  background-color: #ff8906;
+  background: #ff8906;
+  background: linear-gradient(155deg, #ff8906 16%, #f25f4c 53%, #e53170 92%);
   padding: 1.2rem 2rem;
   border-radius: 4px;
   font-size: 1.1rem;
