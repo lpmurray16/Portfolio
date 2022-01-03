@@ -192,7 +192,7 @@ a {
     transition: all 400ms ease;
     &:hover,
     &:focus {
-        box-shadow: inset 0 -3.75em 0 0 $peachy;
+        box-shadow: inset 0 -3.75em 0 0 $extra;
     }
 }
 
@@ -227,7 +227,11 @@ form {
     }
 }
 .anchor-top {
-    padding-top: 5vw;
+    padding-top: 0vw;
+    a,
+    button {
+        width: 100%;
+    }
 }
 ::placeholder {
     color: $paragraph;
