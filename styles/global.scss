@@ -89,6 +89,9 @@
 .hero {
     height: 100vh;
     padding-top: 5.45em;
+    .hero-text {
+        max-width: 40ch;
+    }
 }
 // HELPER CLASSES FOR BACKGROUND CONTRAST
 .bg-dark {
@@ -474,8 +477,8 @@ body {
     background: $background;
     border-radius: 4px;
     padding: 1em;
-    min-width: 25ch;
-    width: 25ch;
+    min-width: 290px;
+    width: 290px;
     margin: 1vw;
     &_top {
         display: flex;
