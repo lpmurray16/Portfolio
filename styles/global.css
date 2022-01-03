@@ -236,6 +236,7 @@ a:hover {
 
 img {
   max-width: 100%;
+  border-radius: 4px;
 }
 
 /* input containers */
@@ -252,6 +253,7 @@ form p label,
 form p input {
   display: block;
   margin-bottom: 0.5em;
+  border-radius: 4px;
 }
 
 form input,
@@ -261,6 +263,7 @@ form textarea {
   padding: 16px;
   color: #fffffe;
   width: 100%;
+  border-radius: 4px;
 }
 
 .anchor-top {
