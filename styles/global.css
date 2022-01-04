@@ -304,10 +304,6 @@ body {
   overflow-x: hidden !important;
 }
 
-html {
-  overflow-x: hidden !important;
-}
-
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
