@@ -57,6 +57,7 @@
 .my_name {
   text-shadow: 0.07em 0.07em 0px #0a090f, 0.1em 0.1em 0px #ff8907, 0.15em 0.15em 0 #e53170;
   letter-spacing: 0.5vw;
+  text-transform: uppercase;
 }
 
 .w100 {
@@ -300,7 +301,11 @@ body {
   height: 100vh;
   background-color: #0f0e17;
   z-index: 0;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+}
+
+html {
+  overflow-x: hidden !important;
 }
 
 .header {
@@ -697,11 +702,11 @@ body {
   }
   .menu__container {
     position: fixed;
-    padding: 9px;
+    padding: 8px;
     border-radius: 50%;
     bottom: 2%;
     z-index: 99;
-    right: 5%;
+    right: 6%;
     background: #ff8906;
     background: linear-gradient(155deg, #ff8906 16%, #f25f4c 53%, #e53170 92%);
     -webkit-transition: all 300ms ease;

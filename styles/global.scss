@@ -58,6 +58,7 @@
     text-shadow: 0.07em 0.07em 0px #0a090f, 0.1em 0.1em 0px #ff8907,
         0.15em 0.15em 0 #e53170;
     letter-spacing: 0.5vw;
+    text-transform: uppercase;
 }
 .w100 {
     width: 100%;
@@ -249,7 +250,10 @@ body {
     height: 100vh;
     background-color: $background;
     z-index: 0;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+}
+html {
+    overflow-x: hidden !important;
 }
 
 /////////////////// TOP BAR NAVIGATION AND ICON/TITLE //////////////////
@@ -624,11 +628,11 @@ body {
     }
     .menu__container {
         position: fixed;
-        padding: 9px;
+        padding: 8px;
         border-radius: 50%;
         bottom: 2%;
         z-index: 99;
-        right: 5%;
+        right: 6%;
         background: $orange;
         background: linear-gradient(
             155deg,
