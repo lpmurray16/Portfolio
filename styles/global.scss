@@ -643,25 +643,7 @@ body {
     .top_bottom-p1 {
         padding: 2em 0;
     }
-    .menu__container {
-        position: fixed;
-        padding: 8px;
-        bottom: 4%;
-        right: 4%;
-        background: $orange;
-        background: linear-gradient(
-            155deg,
-            $orange 16%,
-            $peachy 53%,
-            $extra 92%
-        );
-        z-index: 99;
-        border-radius: 50%;
-        transition: all 300ms ease;
-        &:hover {
-            box-shadow: inset 0 -4.75em 0 0 $extra;
-        }
-    }
+
     /* width of scrollbar */
     ::-webkit-scrollbar {
         width: 0px;
