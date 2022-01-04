@@ -339,9 +339,9 @@ body {
 }
 
 .icon {
-  width: 50px;
+  width: 90px;
   height: auto;
-  margin: 1em;
+  margin: 2em 0 0 2em;
 }
 
 .icon_title {
@@ -613,7 +613,7 @@ body {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    padding-top: 3em;
+    padding-top: 3.5em;
   }
   .stack-bottom {
     padding-top: 3em;
@@ -623,7 +623,27 @@ body {
   }
 }
 
+.sidebar_nav_list .list_item:last-of-type {
+  border-bottom: 2px solid #ff8906;
+}
+
+@media (min-width: 1440px) {
+  .hero-left {
+    padding-left: 19vw;
+  }
+}
+
 @media (max-width: 575.98px) {
+  .sidebar_nav_list .list_item {
+    padding: 1.5em 0;
+    text-align: center;
+    font-size: 1.3em;
+    background-color: #f25f4c;
+    border-top: 2px solid #ff8906;
+  }
+  .hero-left .txt-large {
+    padding-top: 0.5em;
+  }
   .menu__text {
     display: none;
   }
