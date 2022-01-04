@@ -169,9 +169,9 @@
 // every section found in main
 section {
     &:last-of-type {
-        padding: 3vw 5vw 7vw;
+        padding: 3em 5vw 7vw;
     }
-    padding: 3vw 5vw 10vw;
+    padding: 3em 5vw 3em;
 }
 
 // all lone anchor tags
@@ -232,6 +232,10 @@ form {
         width: 100%;
         border-radius: 4px;
     }
+    .submit {
+        padding: 2em 0;
+        margin-bottom: 0;
+    }
 }
 .anchor-top {
     padding-top: 0vw;
@@ -281,6 +285,7 @@ body {
 .icon {
     width: 90px;
     height: auto;
+    margin: 1.25em;
     &_title {
         display: flex;
         align-items: center;

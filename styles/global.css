@@ -203,11 +203,11 @@
 }
 
 section {
-  padding: 3vw 5vw 10vw;
+  padding: 3em 5vw 3em;
 }
 
 section:last-of-type {
-  padding: 3vw 5vw 7vw;
+  padding: 3em 5vw 7vw;
 }
 
 a {
@@ -273,6 +273,11 @@ form textarea {
   color: #fffffe;
   width: 100%;
   border-radius: 4px;
+}
+
+form .submit {
+  padding: 2em 0;
+  margin-bottom: 0;
 }
 
 .anchor-top {
@@ -345,6 +350,7 @@ body {
 .icon {
   width: 90px;
   height: auto;
+  margin: 1.25em;
 }
 
 .icon_title {
